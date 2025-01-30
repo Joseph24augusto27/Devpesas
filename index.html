@@ -15,82 +15,59 @@
 
 <body>
 
-
     <video src="./assets/video-de-fundo.mp4" autoplay muted loop></video>
 
     <h1>Lista De Despesas</h1>
 
     <section>
         <div>
+
+            <h2>DATA</h2>
+            <h2>TIPO</h2>
+            <h2>VALOR</h2>
+
+            <div class="div-table">
+
+                <table id="despesas-table">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+
+            </div>
             
-                <h2>DATA</h2>
-                <h2>TIPO</h2>
-                <h2>VALOR</h2>
+            <!-- Formulário de Adicionar Despesa -->
+            <div id="form-container">
+                <form>
+                    <input type="text" placeholder="Data">
+                    <input type="text" placeholder="Tipo">
+                    <input type="number" placeholder="Valor">
+                    <button type="submit">Adicionar</button>
+                </form>
+            </div>
             
-<div class="div-table">
-    
-    <table>
-        <tr>
-            <td>15/03/25</td>
-            <td>ifood</td>
-            <td>51,90$</td>
-        </tr>
-        <tr>
-            <td>15/03/25</td>
-            <td>ifood</td>
-            <td>51,90$</td>
-        </tr>
-        <tr>
-            <td>15/03/25</td>
-            <td>ifood</td>
-            <td>51,90$</td>
-        </tr>
-        <tr>
-            <td>15/03/25</td>
-            <td>ifood</td>
-            <td>51,90$</td>
-        </tr>
-        <tr>
-            <td>15/03/25</td>
-            <td>ifood</td>
-            <td>51,90$</td>
-        </tr>
-        <tr>
-            <td>15/03/25</td>
-            <td>ifood</td>
-            <td>51,90$</td>
-        </tr>
-        <tr>
-            <td>15/03/25</td>
-            <td>ifood</td>
-            <td>51,90$</td>
-        </tr>
-        <tr>
-            <td>15/03/25</td>
-            <td>ifood</td>
-            <td>51,90$</td>
-        </tr>
+                </form>
+            </div>
 
-    </table>
+            <!-- Botão para Mostrar Formulário -->
+            <button title="adicionar despesa" id="add-button">+</button>
 
-
-
-</div>
-
-
-            <button title="adicionar despesa">+</button>
-
-            <h3>TOTAL DE DESPESAS:<span>0,00</span>$</h3>
+            <h3>TOTAL DE DESPESAS: <span id="total">0,00</span>$</h3>
 
         </div>
-
-
     </section>
 
 
+<script src="./script.js"></script>
 
 
-    <script src="./script.js"></script>
 </body>
 
 </html>
